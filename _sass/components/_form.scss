@@ -71,6 +71,7 @@
 	}
 
 	input[type="text"],
+	input[type="number"],
 	input[type="password"],
 	input[type="email"],
 	input[type="tel"],
@@ -122,10 +123,20 @@
 	}
 
 	input[type="text"],
+	input[type="number"],
 	input[type="password"],
 	input[type="email"],
 	select {
 		height: _size(element-height);
+		option {
+			color: initial;
+		}
+	}
+
+	input[type="number"] {
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+		}
 	}
 
 	textarea {
@@ -133,7 +144,7 @@
 	}
 
 	input[type="checkbox"],
-	input[type="radio"], {
+	input[type="radio"] {
 		@include vendor('appearance', 'none');
 		display: block;
 		float: left;

@@ -1,5 +1,5 @@
 # site settings
-title: KSP Orbit Darkness Calculator
+title: KSP Orbital Darkness Calculator
 # subtitle: by HTML5 UP
 email: youremailaddress@gmail.com
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
@@ -22,8 +22,7 @@ tiles-count: 6
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/benjamenhogben
-  Google-Plus: https://plus.google.com/u/0/+AndrewBanchich
+  GitHub: https://github.com/benjamenjohnsondev
   LinkedIn: https://www.linkedin.com/in/benjohnsondev
 
 # build settings

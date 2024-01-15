@@ -1,0 +1,29 @@
+/* Calculator */
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        
+        @include breakpoint(small) {
+            flex-direction: column;
+        }
+        
+        .hw {
+            width: calc(50% - 1em);
+
+            @include breakpoint(small) {
+                width: 100%;
+            }
+        }
+    }
+    #splitter {
+        background-color: _palette(border);
+        width: 1px;
+
+        @include breakpoint(small) {
+            width: 100%;
+            height: 1px;
+            margin-bottom: 1em;
+        }
+    }
