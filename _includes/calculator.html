@@ -1,46 +1,63 @@
 <section>
 	<div class="inner">
-		<h2>Orbital darkness time</h2>
+		<h2>Orbital darkness time <span class="blue"><i class="fa-solid fa-circle-half-stroke"></i></span></h2>
 		<div class="flex">
 			<section class="hw">
 				<form id="ksp-odc">
 					<div class="field half first">
-						<label for="apo">Apoapsis</label>
+						<label for="apo">Apoapsis (m)</label>
 						<input type="number" name="apo" id="apo" />
 					</div>
 					<div class="field half">
-						<label for="peri">Periapsis</label>
+						<label for="peri">Periapsis (m)</label>
 						<input type="text" name="peri" id="peri" />
 					</div>
 					<div class="field">
 						<label for="body">Body</label>
 						<select id="body" name="body">
-							<option>Select your body...</option>
+							<option value="">Select your body...</option>
+							<option value="bop">Bop</option>
+							<option value="dres">Dres</option>
+							<option value="duna">Duna</option>
+							<option value="eeloo">Eeloo</option>
+							<option value="eve">Eve</option>
+							<option value="gilly">Gilly</option>
+							<option value="ike">Ike</option>
+							<option value="jool">Jool</option>
 							<option value="kerbin">Kerbin</option>
-							<option value="mun">Mun</option>
+							<option value="laythe">Laythe</option>
 							<option value="minmus">Minmus</option>
+							<option value="moho">Moho</option>
+							<option value="mun">Mun</option>
+							<option value="pol">Pol</option>
+							<option value="tylo">Tylo</option>
+							<option value="vall">Vall</option>
 						</select>
 					</div>
 					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="special" /></li>
+						<li><input type="submit" value="Calculate" class="special" /></li>
 						<li><input type="reset" value="Clear" /></li>
 					</ul>
 				</form>
 			</section>
 			<span id="splitter"></span>
 			<section class="hw">
-				<h3>Result:</h3>
-				<div>
-					<span id="result-in-seconds">...</span>
+				<label><i class="fa-solid fa-stopwatch"></i> Result:</label>
+				<div class="field">
+					<input class="result" type="text" disabled id="td-in-seconds-label" placeholder="..."/>
+					<input class="result" type="text" disabled id="td-in-seconds" style="display: none;"/>
 				</div>
-				<div>
-					<span id="result-in-minutes"></span>
+				<div class="field">
+					<input class="result" type="text" disabled id="td-in-minutes-label" style="display: none;"/>
+					<input class="result" type="text" disabled id="td-in-minutes" style="display: none;"/>
 				</div>
-				<div>
-					<span id="result-in-hours"></span>
+				<div class="field">
+					<input class="result" type="text" disabled id="td-in-hours-label" style="display: none;"/>
+					<input class="result" type="text" disabled id="td-in-hours" style="display: none;"/>
 				</div>
-				<div>
-					<span id="result-in-days"></span>
+				<div class="field">
+					<input class="result" type="text" disabled id="td-in-days-label" style="display: none;"/>
+					<input class="result" type="text" disabled id="td-in-days" style="display: none;"/>
 				</div>
 			</section>
 		</div>
@@ -48,6 +65,34 @@
 </section>
 <section>
 	<div class="inner">
-		<h2>Battery storage calculator</h2>
-	</div>	
+		<h2>Storage calculator <span class="red"><i class="fa-solid fa-battery-quarter fa-rotate-by" style="--fa-rotate-angle: -90deg;""></i></span></h2>
+		<div class="flex">
+			<section class="hw">
+				<form id="ksp-ecc">
+					<div class="field three-quart first no-float">
+						<label for="ecc">Energy Charge per second (ec/s)</label>
+						<input type="number" name="ecc" id="ecc" />
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Calculate" class="special" /></li>
+						<li><input type="reset" value="Clear" /></li>
+					</ul>
+				</form>
+			</section>
+			<span id="splitter"></span>
+			<section class="hw">
+				<form>
+					<div class="field">
+						<label><span class="yellow"><i class="fa-solid fa-bolt"></i></span> Result (total EC required):</label>
+						<input class="result" type="text" disabled id="ecTd-result-label" placeholder="..."/>
+						<input class="result" type="text" disabled id="ecTd-result" style="display: none;"/>
+					</div>
+					<div class="field">
+						<label><span class="green"><i class="fa-solid fa-recycle"></i></span> Result (total EC/s required):</label>
+						<input class="result" type="text" disabled id="ecR-result-label" placeholder="..."/>
+						<input class="result" type="text" disabled id="ecR-result" style="display: none;"/>
+					</div>
+				</form>
+			</section>
+	</div>
 </section>
