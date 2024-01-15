@@ -1,8 +1,8 @@
 # site settings
 title: KSP Orbital Darkness Calculator
 # subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+# email: youremailaddress@gmail.com
+description: KSP Orbital Darkness Calculator | calculates the worst case scenarios for time spent in darkness
 # baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://benjamenhogben.github.io/ksp-orbit-darkness-time/"
 author:
