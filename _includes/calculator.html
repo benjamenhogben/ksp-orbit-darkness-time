@@ -1,49 +1,53 @@
 <section>
-	<h2>Orbital darkness time</h2>
-	<div class="inner flex">
-		<section class="hw">
-			<form id="ksp-odc">
-				<div class="field half first">
-					<label for="apo">Apoapsis</label>
-					<input type="number" name="apo" id="apo" />
+	<div class="inner">
+		<h2>Orbital darkness time</h2>
+		<div class="flex">
+			<section class="hw">
+				<form id="ksp-odc">
+					<div class="field half first">
+						<label for="apo">Apoapsis</label>
+						<input type="number" name="apo" id="apo" />
+					</div>
+					<div class="field half">
+						<label for="peri">Periapsis</label>
+						<input type="text" name="peri" id="peri" />
+					</div>
+					<div class="field">
+						<label for="body">Body</label>
+						<select id="body" name="body">
+							<option>Select your body...</option>
+							<option value="kerbin">Kerbin</option>
+							<option value="mun">Mun</option>
+							<option value="minmus">Minmus</option>
+						</select>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Send Message" class="special" /></li>
+						<li><input type="reset" value="Clear" /></li>
+					</ul>
+				</form>
+			</section>
+			<span id="splitter"></span>
+			<section class="hw">
+				<h3>Result:</h3>
+				<div>
+					<span id="result-in-seconds">...</span>
 				</div>
-				<div class="field half">
-					<label for="peri">Periapsis</label>
-					<input type="text" name="peri" id="peri" />
+				<div>
+					<span id="result-in-minutes"></span>
 				</div>
-                <div class="field">
-                    <label for="body">Body</label>
-                    <select id="body" name="body">
-						<option>Select your body...</option>
-                        <option value="kerbin">Kerbin</option>
-                        <option value="mun">Mun</option>
-						<option value="minmus">Minmus</option>
-                    </select>
-                </div>
-				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<li><input type="reset" value="Clear" /></li>
-				</ul>
-			</form>
-		</section>
-		<span id="splitter"></span>
-        <section class="hw">
-			<h3>Result:</h3>
-			<div>
-				<span id="result-in-seconds">...</span>
-			</div>
-			<div>
-				<span id="result-in-minutes"></span>
-			</div>
-			<div>
-				<span id="result-in-hours"></span>
-			</div>
-			<div>
-				<span id="result-in-days"></span>
-			</div>
-        </section>
+				<div>
+					<span id="result-in-hours"></span>
+				</div>
+				<div>
+					<span id="result-in-days"></span>
+				</div>
+			</section>
+		</div>
 	</div>
 </section>
 <section>
-	<h2>Battery storage calculator</h2>
+	<div class="inner">
+		<h2>Battery storage calculator</h2>
+	</div>	
 </section>
